@@ -1,0 +1,196 @@
+/* Paleta de cores:
+#012810
+#00630E
+#005041
+#B5F4CF
+*/
+
+/* Configuração geral da página */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Cabeçalho */
+header {
+    height: 50px;
+    background: linear-gradient(to bottom, #272727e3, rgba(39, 39, 39, 0.89));
+    text-align: center;
+    box-shadow: 0 -20px 50px -10px #003d1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .find {
+    display: flex;
+    align-items: center;
+}
+header input {
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    width: 500px;
+    height: 30px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+header button {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(1, 40, 16, 0.164), rgba(39, 39, 39, 0.192));
+}
+
+header button:hover {
+    background: linear-gradient(to bottom, #75757579, rgba(39, 39, 39, 0.89));
+    cursor: pointer;
+}
+
+header button img, header button {
+    width: 40px;
+    height: 40px;
+}
+
+/* Sidebar */
+/* all siderbar */
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: hsla(0, 0%, 15%, 0.89);
+    padding: 24px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+.sidebar:hover {
+    border-right: #6e6e6ed5 1px solid;
+}
+
+.sidebar .nav-logo img {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar .nav-discography {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.sidebar .nav-discography p {
+    position: absolute; /* ou relative, dependendo do caso */
+    left: 0;
+    margin-left: 25px;
+}
+
+.sidebar .nav-discography .btn-discography {
+    background-color: #272727;
+    height: 30px;
+    border: none;
+    padding: 0px;
+}
+
+.sidebar .nav-discography .btn-discography:hover {
+    background-color: #fdfdfd57;
+    cursor: pointer;
+    padding: 0px;
+}
+
+
+.sidebar .nav-discography img {
+    margin: auto;
+    padding: auto;
+    width: 20px;
+    height: 17px;
+}
+
+.sidebar button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.sidebar button:hover {
+    background-color: #fdfdfd57;
+    cursor: pointer;
+}
+
+/* sidebar view artist */
+.sidebar .into-discography {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+}
+
+.sidebar .into-discography .find-into-discography:hover {
+    width: 30px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+.sidebar .into-discography .find-into-discography img {
+    width: 25px;
+    margin-left: 12%;
+}
+
+.sidebar .into-discography input {
+    display: none;
+    border: none;
+    width: 0%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.sidebar .into-discography input:hover {
+    border: 2px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+.sidebar .discography-view {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70%;
+    margin-right: 0%;
+}
+
+.icon-view {
+    width: 30px;
+    border-radius: 10px;
+    border-color: linear-gradient(to bottom, #75757579, rgba(39, 39, 39, 0.89));
+}
+
+/* Corpo e sobreposição */
+body {
+    background: #00630E;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent 100%) top,
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent 100%) bottom,
+        linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent 100%) left,
+        linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent 100%) right;
+    background-repeat: no-repeat;
+    background-size: 100% 10px, 100% 10px, 10px 100%, 10px 100%;
+    z-index: 1;
+    height: 100%;
+}
+
+

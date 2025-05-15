@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/Home/index.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Spotifeio</title>
+<link rel="stylesheet" href="./Spotifeio_files/index.css"></head>
+<body cz-shortcut-listen="true">
+    <div class="overlay">
+        <header>
+            <div class="find">
+                <button type="button"><img src="./Spotifeio_files/home.png" alt="home"></button>
+                <input type="search" placeholder="Busque o pior hit do momento aqui!">
+            </div>
+        </header>
+        <nav class="sidebar">
+            <div class="nav-logo">
+                <a href="http://127.0.0.1:5500/Home/index.html">
+                    <img src="./Spotifeio_files/Spotify_logo.png" alt="Spotify">
+                </a>
+            </div>
+            <div class="nav-discography">
+                <p>Sua Biblioteca</p>
+                <button class="close">
+                    <img class="seta" src="./Spotifeio_files/direita.png" alt="seta-direta">
+                </button>
+            </div>
+            <div>
+                <button type="button">Criar Playlist</button>
+                <button type="button">Playlists</button>
+                <button type="button">Podcast</button>
+                <button type="button">Albuns</button>
+                <button type="button">Artistas</button>
+            </div>
+            <div class="into-discography">
+                <button class="find-into-discography" type="button"><img src="./Spotifeio_files/lupa.png" alt="lupa"></button>
+                <input class="open-find-discography" type="search" placeholder="Procure na sua biblioteca">
+                <button class="btn-discography-view">View
+                    <img class="icon-view" src="./Spotifeio_files/view2.png" alt="view" style="width: 50px;">
+                </button>
+            </div>
+        </nav>
+        <!-- <main>
+            <header>
+            <h1>Spotifeio</h1>
+            <p>Busque a merda do momento:</p>
+            <input type="text" placeholder="Busque o pior hit do momento aqui!">
+            </header>
+            <section>
+                <h2>Bem vindo ao Spotifeio</h2>
+                <h3>Seu lugar para ouvir música ruim</h3>
+            </section>
+            <div>
+                <div>
+                    <p>Músicas em baixa/p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div>
+                    <p>Artista em baixa</p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div>
+    
+            </div>
+        </main> -->
+    </div>
+
+    <script src="./Spotifeio_files/index.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
